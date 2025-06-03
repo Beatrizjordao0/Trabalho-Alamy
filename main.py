@@ -3,7 +3,7 @@ from PIL import Image, ImageTk
 import math
 
 app = ctk.CTk()
-app.geometry("600x600")
+app.geometry("1500x750")
 app.title("Matriz")
 app.configure(fg_color="#7B4626")
 fonte_matriz = ("Fredoka One", 35)
@@ -148,17 +148,17 @@ i = ctk.CTkEntry(app,
                  border_width=5)
 
 # Posicionamento com grid (dentro do frame central)
-a.place(relx=0.279, rely=0.348, anchor="e")
-b.place(relx=0.365, rely=0.348, anchor="e")
-c.place(relx=0.449, rely=0.348, anchor="e")
+a.place(relx=0.274, rely=0.33, anchor="e")
+b.place(relx=0.362, rely=0.33, anchor="e")
+c.place(relx=0.447, rely=0.33, anchor="e")
 
-d.place(relx=0.279, rely=0.5, anchor="e")
-e.place(relx=0.365, rely=0.5, anchor="e")
-f.place(relx=0.449, rely=0.5, anchor="e")
+d.place(relx=0.274, rely=0.5, anchor="e")
+e.place(relx=0.362, rely=0.5, anchor="e")
+f.place(relx=0.447, rely=0.5, anchor="e")
 
-g.place(relx=0.279, rely=0.66, anchor="e")
-h.place(relx=0.365, rely=0.66, anchor="e")
-i.place(relx=0.449, rely=0.66, anchor="e")
+g.place(relx=0.274, rely=0.67, anchor="e")
+h.place(relx=0.362, rely=0.67, anchor="e")
+i.place(relx=0.447, rely=0.67, anchor="e")
 
 # Botão e label de resultado
 botao = ctk.CTkButton(app, 
@@ -175,7 +175,7 @@ botao = ctk.CTkButton(app,
 
 
 botao.place(relx=0.537, 
-            rely=0.69, 
+            rely=0.70, 
             anchor="w")
 
 resultado_label = ctk.CTkLabel(conteudo_frame, 
@@ -197,6 +197,6 @@ botao_limpar = ctk.CTkButton(bg_label,
                              height=105,
                              border_color=cor_escura,
                              border_width=10)
-botao_limpar.place(relx=0.778, rely=0.2, anchor="w")
+botao_limpar.place(relx=0.778, rely=0.18, anchor="w")
 
 app.mainloop()
